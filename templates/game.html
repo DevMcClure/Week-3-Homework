@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block content %} 
+
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>{{ title }} - Winner </title>
+  </head>
+
+            <body>
+                <header>                </header>
+
+                <h1>Who won </h1>
+                <div>{{ player1.name }} picked {{player1.choice}}</div>
+                <div>{{ player2.name }} picked {{player2.choice}}</div>
+                <div>{{ winner.name }} is the winner! </div>
+            
+
+            </body>
+</html>
+{%endblock%}
